@@ -1,0 +1,181 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.11 (19/6/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.80]{geometry} % Reduce document margins
+\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Stefano} % Your first name
+\familyname{Bovina} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum Vitae}
+\address{Via Ugo Foscolo 23}{Pieve di Cento, Italia}
+\mobile{(+39) 347 0729632}
+\email{bovy89@gmail.com}
+%\photo[70pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\subsection{Vocational}
+
+\cventry{2012--Present}{System Administrator}{\textsc{INFN-CNAF}}{Bologna}{}{Design and development of INFN Information System infrastructure, based on Ovirt virtualization manger, RedHat cluster and EMC-VNX5300 storage, placed inside INFN-T1 datacenter.
+\newline{}\newline{}
+Detailed achievements:
+\begin{itemize}
+\item Implement a provisioning system based on Puppet and Theforeman
+\item Implement a log analysis infrastructure based on ELK stack
+\item Implement a monitoring system to replace Nagios, based on Sensu, InfluxDB and Grafana
+\item Hardening service security and configuration of mission critical web services
+\item Installation and configuration of hardware parts in the datacenter
+\item Management of continuous integration environments and docker images for "DocFornitori" Project
+\item Administration of Disaster Recovery project with Frascati National Laboratories
+\end{itemize}}
+%------------------------------------------------
+
+\subsection{Miscellaneous}
+
+\cventry{2012--Present}{Developer}{\textsc{INFN-CNAF}}{Bologna}{}{Developer and member of support teams for several projects
+\newline{}\newline{}
+Detailed achievements:
+\begin{itemize}
+\item Developer for INFN Business trips webapp, based on CakePHP framework
+\item Developer for INFN Oracle EBS, a business applications for the enterprise
+\item Developer of a webapp "DocFornitori" for suppliers documents management, based on Vaadin Framework and Alfresco
+\item Migration and upgrade of entire INFN national information system from version Oracle E-Business
+Suite r.11 to version Oracle E-Business Suite r.12. New technologic infrastructure from Architecture
+System 32-bit to Architecture System 64-bit with new cooperation layers.
+First Italian Project with Oracle E-Business Suite r.12, public management accounting , in use in a
+research institute and particularly in a Public Administration
+\end{itemize}}
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\cventry{2008--Present}{Undergraduate in Computer Science}{The University of Bologna}{}{\textit{Bologna}}{}  % Arguments not required can be left empty
+\cventry{2003--2008}{Diploma in Mathematics and Computer Science}{I.S.I.T. Bassi Burgatti}{}{\textit{Cento}}{}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Computer skills}
+
+\cvitem{}{Puppet, Theforeman, Elasticsearch, Logstash, Kibana, Nagios, Sensu, Redis, Rabbitmq, HAProxy, Vagrant, Grafana, InfluxDB, Graphite, Tomcat, Apache, Nginx, PostgreSQL, MySQL, Git, Svn, Nexpose, PL/SQL, RedHat, CentOS, OracleLinux, Debian, Jenkins, Docker,  Ovirt, Jira, Bootstrap, AngularJS, Openoffice, Microsoft Office}
+\cvitem{}{Python, Bash, Php, Java, Ruby}
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Communication Skills}
+
+\cvitem{2015}{Seminary: CNAF Bebop: Provisioning, Monitoring and Log Analysis as-a-Service}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Skills}
+
+\cvlistitem{Ability to work in team and to cooperate with people with different backgrounds in a constructive manner}
+\cvlistitem{Ability to work in stressful conditions and time constrained situations}
+\cvlistitem{Ability to documentation and planning of every activity with Trello and Jira Software}
+
+%----------------------------------------------------------------------------------------
+%	COURSE AND CERTIFICATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Courses}
+
+\cventry{}{Ethical Hacking}{}{}{\textit{Overnet Education}}{}  % Arguments not required can be left empty
+\cventry{}{Network Security Administrators}{}{}{\textit{Overnet Education}}{}  % Arguments not required can be left empty
+\cventry{}{PostgreSQL Administration and Performance Tuning}{}{}{\textit{Cybertec}}{}  % Arguments not required can be left empty
+\cventry{}{Web applications with PHP and Mysql}{}{}{\textit{Overnet Education}}{}  % Arguments not required can be left empty
+\cventry{}{HTML5 and CSS3}{}{}{\textit{Overnet Education}}{}  % Arguments not required can be left empty
+\cventry{}{Spring Framework for Java applications}{}{}{\textit{Overnet Education}}{}  % Arguments not required can be left empty
+\cventry{}{Hibernate Framework for Java applications}{}{}{\textit{Overnet Education}}{}  % Arguments not required can be left empty
+\cventry{}{Javascript new frontiers: TreeJs, AngularJS, NodeJS}{}{}{\textit{Overnet Education}}{}  % Arguments not required can be left empty
+\cventry{}{Grid site administrator}{}{}{\textit{IGI}}{}  % Arguments not required can be left empty
+\cventry{}{Oracle Database 11g: Data Guard Administration}{}{}{\textit{Oracle University}}{}  % Arguments not required can be left empty
+\cventry{}{Oracle Grid Infrastructure 11g: Manage Clusterware and ASM}{}{}{\textit{Oracle University}}{}  % Arguments not required can be left empty
+\cventry{}{Oracle 11g: RAC and Grid Infrastructure Overview Seminar}{}{}{\textit{Oracle University}}{}  % Arguments not required can be left empty
+\cventry{}{Oracle Database: Program with PL/SQL}{}{}{\textit{Oracle University}}{}  % Arguments not required can be left empty
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Awards}
+
+\cvitem{2005}{First place at "Concorso Paolo Bongiovanni: Best website" 2005 edition}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+\cvitemwithcomment{Italian}{Mothertongue}{}
+\cvitemwithcomment{English}{Intermediate}{}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Interests}
+
+\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+
+\cvlistdoubleitem{Snowboarding}{Videogame}
+\cvlistdoubleitem{Motorcycling}{Music}
+\cvlistitem{TV-Series}{}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
